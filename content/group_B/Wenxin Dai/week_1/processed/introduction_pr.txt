@@ -1,0 +1,5 @@
+<span class="textInfo">Third year student at XJTLU
+ (one year at UOL)
+
+* Software skill: PS, AI, ID, RHINO, ENSCAPE , VARY
+</span>

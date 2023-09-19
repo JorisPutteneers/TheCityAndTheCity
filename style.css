@@ -1,0 +1,43 @@
+:root { --background-color: #000000; --font-color: rgb(255, 255, 255); --border-color: rgba(111, 111, 111, 0.272); --accent-color1: rgba(100, 100, 100); --accent-color2: rgb(199, 199, 199);}  
+@font-face {  font-family: 'RobotoSlab';  src: url('./font/RobotoSlab-VariableFont_wght.ttf') format('truetype');  font-weight: 400;}
+html,body {  height: 100%;  margin: 0; background-color: var(--background-color); font-family: 'RobotoSlab'; }
+button{  color: var(--font-color);  background-color: var(--background-color);  border: none;  cursor: pointer;  font-family: 'RobotoSlab';  font-size: 12px;}
+iframe {  top: 0;   left: 0; width: 100%;   height: 100%;   border: none;  border-left: 1px solid var(--border-color);}
+img{  width: 100px; border: 1px solid rgba(34, 34, 34, 0.319); border-radius: 0px; cursor: pointer;}
+span{ font-size: 12px; background-color: "rgba(255,255,255,0.01)"; backdrop-filter: blur(10px); color: white; border: 1px solid rgba(0, 0, 0, 0.288); border-radius: 10px; padding: 5px;}
+a:visited{color: rgb(255,255,255); }
+
+
+
+  iframe::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #000000;
+  }
+  
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #000000 #000000;
+  }
+
+.textInfo{color: var(--font-color); font-size: 12px; padding: 0px; backdrop-filter: unset;  border: none;}
+.nestedTextInfo{color: var(--accent-color2);}
+
+#groupDescription iframe {     height: 500px;      overflow: hidden;     max-width: 100%; }
+#groupDescription{  color: var(--font-color); margin-right: 30px; margin-left: 30px; font-size: 12px;}
+#content { float: left; width: 70%;  height:100%;  float: left;  overflow: hidden;}
+#header { position: absolute; left: 0; top: 0; width: 10%; margin: 10px;}
+#three {float: left; width: 100%; height: 100%;   z-index: -1;  }
+#info {  width: 30%;  height: 100%;  float: left;  color: var(--font-color);}
+#loading { max-width: 10px; border: none;}
+#screen{ margin-left: -15px; margin-top: 15px; color: rgb(255, 255, 255);  position: absolute; width: 70%;   text-align: right; font-size: 12px; pointer-events: none}
+
+
+
+
+
+@media (max-width: 1000px) { #content{width: 100%;}#info{display: none;}#screen{width: 100%; display: none;}}
