@@ -1,1 +1,5 @@
-group A description. coming soon.
+PARK AUTONOMY
+Can games and virtual interactions drive park
+autonomy to activate parks?
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ph7zaYCfywE?si=0YM-fJaHdL-D5zhX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
