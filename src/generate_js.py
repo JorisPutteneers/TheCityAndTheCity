@@ -134,11 +134,11 @@ def preProcessPdfs(item, week_folder_path, nestedDir=None):
         if item_path.lower().endswith((".pdf")):
             processed_dir = os.path.join(week_folder_path, "processed")
 
-            optionalArgs = ''
+            optionalArgs = '-transparent white'
             if nestedDir != None:
                 print("nested directory -pdf- is activated")
                 processed_dir = os.path.join(nestedDir, "processed")
-                optionalArgs = "-negate"
+                optionalArgs = "-transparent black"
 
 
             os.makedirs(processed_dir, exist_ok=True)
@@ -155,7 +155,7 @@ def preProcessPdfs(item, week_folder_path, nestedDir=None):
                 processed_path_alpha = os.path.join(processed_dir, saveImgAlpha)
 
                 pdfToImgColor = f'convert -density 150 "{item_pdf_save_path}" -resize 512x -quality 90 {optionalArgs} "{processed_path}"' 
-                pdfToImgAlpha = f'convert -density 150 "{item_pdf_save_path}" -resize 512x -fuzz 15% -transparent white -quality 90 {optionalArgs} "{processed_path_alpha}"'
+                pdfToImgAlpha = f'convert -density 150 "{item_pdf_save_path}" -resize 512x -fuzz 15% -quality 90 {optionalArgs} "{processed_path_alpha}"'
             
                 subprocess.run(pdfToImgColor, shell=True)
                 subprocess.run(pdfToImgAlpha, shell=True)        
